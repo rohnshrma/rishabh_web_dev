@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a {
+        background-color: teal;
+        color: #fff;
+        display: inline-block;
+        margin: 180px;
+      }
+
+      span {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <title>Rishabh's first website</title>
+  </head>
+
+  <body>
+    <!-- headings h1-h6 -->
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    <h5>Hello world</h5>
+    <h6>Hello world</h6>
+
+    <!-- paragraph -->
+    <p>Lorem, ipsum dolor.</p>
+
+    <!-- lists : ordered, unordered , descriptive  -->
+
+    <ul type="square">
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+    </ul>
+
+    <ol reversed type="I">
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+    </ol>
+
+    <dl>
+      <dt>Apple</dt>
+      <dd>Apple is red in color</dd>
+      <dt>Apple</dt>
+      <dd>Apple is red in color</dd>
+      <dt>Apple</dt>
+      <dd>Apple is red in color</dd>
+      <dt>Apple</dt>
+      <dd>Apple is red in color</dd>
+    </dl>
+
+    <table border="1">
+      <tr>
+        <th colspan="3">Student Data</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+
+      <tr>
+        <td>Rishabh</td>
+        <td>21</td>
+        <td>Male</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <td>Rishabh</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>21</td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Details</th>
+        <td>9876545678</td>
+      </tr>
+      <tr>
+        <td>rishabh@email.com</td>
+      </tr>
+    </table>
+
+    <form
+      action="mailto:webigeeksofficial@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="fname">Full Name : </label>
+
+      <input
+        required
+        type="text"
+        name="full_name"
+        id="fname"
+        minlength="3"
+        maxlength="10"
+        placeholder="Enter your name..."
+      />
+
+      <!-- line break -->
+      <br />
+
+      <label for="mail">Email Address: </label>
+
+      <input
+        type="email"
+        name="e_address"
+        id="mail"
+        placeholder="Enter your email..."
+      />
+
+      <br />
+
+      <label>
+        Password :
+        <input
+          required
+          minlength="6"
+          type="password"
+          placeholder="Enter your password..."
+          name="password"
+        />
+      </label>
+
+      <br />
+
+      Gender :
+
+      <label>
+        <input type="radio" name="gender" value="male" />
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" />
+        Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="others" />
+        Others
+      </label>
+      <br />
+
+      Skills :
+
+      <label>
+        <input type="checkbox" name="skills" value="html" />
+        HTML
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="css" />
+        CSS
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="javascript" />
+        JAVASCRIPT
+      </label>
+
+      <br />
+
+      <label>
+        Country :
+        <select name="country">
+          <option selected disabled>SELECT COUNTRY</option>
+          <option value="india">INDIA</option>
+          <option value="china">CHINA</option>
+          <option value="bangladesh">BANGLADESH</option>
+        </select>
+      </label>
+
+      <br />
+
+      <label>
+        Age :
+        <input type="number" name="age" min="18" max="25" />
+      </label>
+
+      <br />
+
+      <label>
+        Date of Birth :
+        <input type="date" name="dob" />
+      </label>
+
+      <br />
+
+      <label>
+        Message : <br />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message..."
+        ></textarea>
+      </label>
+
+      <br />
+
+      <label>
+        Profile Picture :
+        <input type="file" name="profile_picture" accept="jpg, jpeg, png" />
+      </label>
+
+      <label>
+        Salary :
+        <input
+          type="range"
+          name="Salary"
+          min="10000"
+          max="100000"
+          value="10000"
+          step="5000"
+        />
+      </label>
+
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="CLEAR" />
+
+      <button type="submit">SUBMIT</button>
+      <button type="reset">CLEAR</button>
+    </form>
+
+    <!-- horizontal rule : horizontal line -->
+    <hr />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+      reiciendis qui sed voluptatum consectetur aliquid nihil? Vel sed quis quod
+      autem consequatur excepturi asperiores, dicta cumque necessitatibus
+      corrupti tempore amet nemo, veniam voluptatem numquam. Optio consectetur
+      harum quia unde esse?
+    </p>
+
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.google.com">GOOGLE</a>
+
+    <h2>
+      welcome to
+      <div>webigeeks</div>
+    </h2>
+
+    <h2>
+      welcome to
+      <span>webigeeks</span>
+    </h2>
+
+    <!-- div (block and doesn't have height of its own (depends upon content or given by css))-->
+    <!-- takes full width -->
+    <!-- starts on a new line -->
+    <!-- may have pre-defined margin and padding -->
+    <!-- custom margin and padding on all sides can be given -->
+
+    <!-- span (inline and doesn't have height and width of its own (depends upon content)) -->
+    <!-- takes height and width as per content -->
+    <!-- allows other inline elements to sit beside  -->
+    <!-- custom padding on all sides can be given  but margin can only be given on left and right-->
+  </body>
+</html>
