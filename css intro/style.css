@@ -1,4 +1,39 @@
+/* selectors */
+
+/* "*" : all selector */
+
+* {
+  font-size: 40px;
+}
+
+/* tag name selector , e.g., p , h2, a ... */
+
+p {
+  color: teal;
+}
+
+/* "#" : id selector, e.g., "#main" */
+
 #main {
-  background-color: cadetblue;
-  color: white;
+  background-color: tan;
+}
+
+/* "." : class selector,  */
+
+.para {
+  letter-spacing: 10px;
+}
+
+.p1 {
+  color: aqua;
+}
+.p2 {
+  color: green;
+}
+
+/* tag[attribute : value] : attribute selector */
+
+input[type="text"] {
+  padding: 10px;
+  background-color: red;
 }
