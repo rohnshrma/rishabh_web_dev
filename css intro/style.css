@@ -1,39 +1,42 @@
-/* selectors */
+/* text related css properties */
 
-/* "*" : all selector */
-
-* {
-  font-size: 40px;
+#main p {
+  /* text color */
+  color: rgb(0, 224, 150);
+  /* text size */
+  font-size: 30px;
+  /* font family */
+  font-family: Arial, sans-serif;
+  /* letter spacing */
+  letter-spacing: 20px;
+  /* text alignment */
+  text-align: justify;
+  /* text boldness */
+  font-weight: 400;
+  /* font style */
+  font-style: italic;
+  /* line height */
+  line-height: 1.5;
+  /* text shadow (x-axis(px) , y-axis(px), blur(px) , color) */
+  text-shadow: -2px -2px 2px red;
 }
-
-/* tag name selector , e.g., p , h2, a ... */
-
-p {
-  color: teal;
-}
-
-/* "#" : id selector, e.g., "#main" */
 
 #main {
-  background-color: tan;
-}
+  /* single background color */
+  /* background: red; */
+  /* background-color: Teal; */
 
-/* "." : class selector,  */
+  /* multicolor background */
+  /* background: linear-gradient(powderblue, orange); */
+  /* background: linear-gradient(90deg, powderblue, orange); */
+  /* background: linear-gradient(90deg, powderblue 60%, orange); */
+  /* background: linear-gradient(90deg, powderblue 60%, orange 40%); */
 
-.para {
-  letter-spacing: 10px;
-}
+  /* background image */
 
-.p1 {
-  color: aqua;
-}
-.p2 {
-  color: green;
-}
-
-/* tag[attribute : value] : attribute selector */
-
-input[type="text"] {
-  padding: 10px;
-  background-color: red;
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/250px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG); */
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/250px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
