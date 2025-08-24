@@ -2,7 +2,7 @@
 
 #main p {
   /* text color */
-  color: rgb(0, 224, 150);
+  color: white;
   /* text size */
   font-size: 30px;
   /* font family */
@@ -18,7 +18,7 @@
   /* line height */
   line-height: 1.5;
   /* text shadow (x-axis(px) , y-axis(px), blur(px) , color) */
-  text-shadow: -2px -2px 2px red;
+  text-shadow: -2px -2px 2px grey;
 }
 
 #main {
@@ -35,8 +35,14 @@
   /* background image */
 
   /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/250px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG); */
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/250px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG);
+  /* background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/250px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG); */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1525824236856-8c0a31dfe3be?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+#main img {
+  filter: blur(10px);
 }

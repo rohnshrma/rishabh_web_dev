@@ -1,0 +1,50 @@
+* {
+  /* remove predefined outer space */
+  margin: 0;
+  /* remove predefined inner space */
+  padding: 0;
+}
+
+.wrapper {
+  text-align: center;
+  /* padding: inner spacing */
+
+  /* padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; */
+
+  /* t-r-b-l */
+  padding: 120px;
+
+  /* t-b , l-r */
+  /* padding: 40px 80px; */
+
+  /* t , l-r , b */
+  /* padding: 40px 80px 120px; */
+
+  /* t, r, b ,l */
+  /* padding: 40px 80px 120px 100px; */
+
+  /* margin : outer spacing (spacing between two tags / elements) */
+  /* margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px; */
+
+  /* t-r-b-l */
+  margin: 40px;
+
+  /* t-b , l-r */
+  /* margin: 40px 80px; */
+
+  /* t , l-r , b */
+  /* margin: 40px 80px 120px; */
+
+  /* t, r, b ,l */
+  /* margin: 40px 80px 120px 100px; */
+}
+
+#main {
+  background-color: powderblue;
+}
