@@ -1,50 +1,78 @@
+/* Reset all elements' margin and padding to 0 */
 * {
-  /* remove predefined outer space */
-  margin: 0;
-  /* remove predefined inner space */
-  padding: 0;
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
 }
 
+/* Style all heading elements (h1-h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px; /* Adds space below headings */
+  font-family: Arial, Helvetica, sans-serif; /* Sets font to Arial, falls back to Helvetica or sans-serif */
+}
+
+/* Style paragraph elements */
+p {
+  font-family: sans-serif; /* Sets font to sans-serif */
+  margin-bottom: 16px; /* Adds space below paragraphs */
+}
+
+/* Style for elements with class 'l-2' */
+.l-2 {
+  font-family: monospace; /* Uses monospace font */
+  color: tomato; /* Sets text color to tomato (red-orange) */
+  font-size: 48px; /* Large font size */
+  text-shadow: -2px 2px 0 #333; /* Shadow: left 2px, down 2px, no blur, dark gray */
+}
+
+/* Style for elements with class 'l-3' */
+.l-3 {
+  font-family: monospace; /* Uses monospace font */
+  color: tomato; /* Sets text color to tomato */
+  font-size: 24px; /* Medium font size */
+  text-shadow: -1px 1px 0 #333; /* Shadow: left 1px, down 1px, no blur, dark gray */
+}
+
+/* Style for elements with class 'btn' (button-like links) */
+.btn {
+  background-color: white; /* White background */
+  color: #333; /* Dark gray text */
+  text-decoration: none; /* Removes underline from links */
+  padding: 10px 12px; /* 10px top/bottom, 12px left/right padding */
+  border-radius: 4px; /* Slightly rounded corners */
+  display: inline-block; /* Allows width/height and margin/padding */
+  font-family: sans-serif; /* Uses sans-serif font */
+  font-size: 16px; /* Medium font size */
+}
+
+/* Style for elements with class 'wrapper' */
 .wrapper {
-  text-align: center;
-  /* padding: inner spacing */
-
-  /* padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px; */
-
-  /* t-r-b-l */
-  padding: 120px;
-
-  /* t-b , l-r */
-  /* padding: 40px 80px; */
-
-  /* t , l-r , b */
-  /* padding: 40px 80px 120px; */
-
-  /* t, r, b ,l */
-  /* padding: 40px 80px 120px 100px; */
-
-  /* margin : outer spacing (spacing between two tags / elements) */
-  /* margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px; */
-
-  /* t-r-b-l */
-  margin: 40px;
-
-  /* t-b , l-r */
-  /* margin: 40px 80px; */
-
-  /* t , l-r , b */
-  /* margin: 40px 80px 120px; */
-
-  /* t, r, b ,l */
-  /* margin: 40px 80px 120px 100px; */
+  text-align: center; /* Centers text horizontally */
+  padding: 120px; /* Large padding on all sides */
+  margin: 40px; /* Space outside the wrapper */
+  box-shadow: 0 0 5px 0 grey; /* Shadow: no offset, 5px blur, no spread, grey color */
+  background-color: powderblue; /* Light blue background */
+  border-radius: 20px; /* Large rounded corners */
 }
 
-#main {
-  background-color: powderblue;
+/* Style for images inside element with id 'main' */
+#main img {
+  /* x-axis , y-axis, blur radius , spread radius, color */
+  box-shadow: -4px 2px 2px 0 grey; /* Shadow: left 4px, down 2px, 2px blur, no spread, grey */
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border-radius: 50%; /* Makes image circular */
+  margin-bottom: 16px; /* Space below image */
+}
+
+/* Hover effect for elements with class 'btn' */
+.btn:hover {
+  box-shadow: -4px 2px 2px 0 grey; /* Adds shadow on hover */
+  transform: scale(1.1); /* Slightly enlarges button */
+  transition: 0.3s ease-in-out; /* Smooth transition for effects */
+  letter-spacing: 2px; /* Increases space between letters */
 }
