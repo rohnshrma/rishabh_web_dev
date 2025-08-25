@@ -1,0 +1,39 @@
+/* position relative */
+/* element moves from its orignal positon */
+/* remains part of document flow (the elements after will not take its place)*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+}
+
+.b1 {
+  background: tomato;
+  position: relative;
+  top: 300px;
+  left: 300px;
+}
+.b2 {
+  position: relative;
+  left: 200px;
+  top: 100px;
+  background: thistle;
+}
+.b3 {
+  background: teal;
+  position: relative;
+  bottom: 100px;
+  left: 300px;
+}
+.b4 {
+  position: relative;
+  bottom: 300px;
+  left: 200px;
+  background: peachpuff;
+}
