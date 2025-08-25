@@ -1,6 +1,6 @@
-/* position relative */
-/* element moves from its orignal positon */
-/* remains part of document flow (the elements after will not take its place)*/
+/* position fixed */
+/* element moves in relation to viewport */
+/* doesn't remains part of document flow (the elements after will take its place)*/
 
 * {
   margin: 0;
@@ -15,25 +15,25 @@
 
 .b1 {
   background: tomato;
-  position: relative;
-  top: 300px;
-  left: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .b2 {
-  position: relative;
-  left: 200px;
-  top: 100px;
   background: thistle;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .b3 {
   background: teal;
-  position: relative;
-  bottom: 100px;
-  left: 300px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .b4 {
-  position: relative;
-  bottom: 300px;
-  left: 200px;
   background: peachpuff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
