@@ -1,10 +1,18 @@
-/* position fixed */
-/* element moves in relation to viewport */
+/* position absolute */
+/* element moves in relation to viewport (by default) , but can be forced to move in relation to parent*/
+/* by giving the parent a position (mostly relative) , if you dont want to move the parent */
 /* doesn't remains part of document flow (the elements after will take its place)*/
 
 * {
   margin: 0;
   padding: 0;
+}
+
+#parent {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: grey;
 }
 
 .box {
@@ -15,25 +23,25 @@
 
 .b1 {
   background: tomato;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 .b2 {
   background: thistle;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   right: 0;
 }
 .b3 {
   background: teal;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .b4 {
   background: peachpuff;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
