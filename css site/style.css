@@ -6,13 +6,6 @@
   padding: 0; /* Removes default padding from all elements */
 }
 
-hr {
-  border: none;
-  border-top: 10px dotted slategrey;
-  width: 10%;
-  margin: 1rem auto;
-}
-
 /* Style all heading elements (h1-h6) */
 
 h2,
@@ -63,7 +56,8 @@ p {
   text-align: center; /* Centers text horizontally */
   padding: 120px; /* Large padding on all sides */
   margin: 40px; /* Space outside the wrapper */
-
+  box-shadow: 0 0 5px 0 grey; /* Shadow: no offset, 5px blur, no spread, grey color */
+  background-color: powderblue; /* Light blue background */
   border-radius: 20px; /* Large rounded corners */
 }
 
