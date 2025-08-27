@@ -143,3 +143,76 @@ p {
   left: 200px;
   bottom: 300px;
 }
+
+#skills .row {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+#skills .skill {
+  padding: 2rem;
+  width: 25%;
+  border-radius: 10px;
+}
+#skills .skill p {
+  margin: 0;
+}
+
+#skills .skill:hover {
+  background-color: #fff;
+  transition: 0.3s ease-in;
+  box-shadow: -2px 2px 0 tomato;
+}
+
+#skills .skill i {
+  color: teal;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+#skills .skill:hover i {
+  transition: 0.3s ease-in;
+  transform: rotate(360deg);
+  text-shadow: -2px 2px 0 tomato;
+}
+
+#pricing .row {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pricing .row .col {
+  width: 25%;
+}
+#pricing .row .col .card {
+  box-shadow: -2px 2px 0 tomato;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0.5px solid #ccc;
+}
+
+#pricing .row .col .card-header {
+  padding: 1rem;
+  background-color: teal;
+  color: #fff;
+}
+#pricing .row .col .card-body {
+  padding: 1rem;
+  background-color: #fff;
+}
+#pricing .row .col .card-body .card-price {
+  font-weight: 700;
+  color: teal;
+  text-shadow: -2px 2px 0 tomato;
+  font-size: 3rem;
+}
+#pricing .row .col .card-header .card-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#pricing .row .col .card-header h4 {
+  margin: 0;
+}
