@@ -1,69 +1,160 @@
 <!DOCTYPE html>
+<!-- Declares the document as HTML5, ensuring browsers render it in standards mode -->
+
 <html>
+  <!-- Root element of the HTML page, containing all other elements -->
+
   <head>
+    <!-- Contains metadata about the document, not displayed on the page -->
+
     <title>CSS SITE</title>
+    <!-- Sets the page title, shown in the browser's title bar or tab -->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <!-- Links to Font Awesome CSS from a CDN for icons; 'rel' specifies it's a stylesheet, 'href' is the URL -->
 
     <link rel="stylesheet" href="style.css" />
+    <!-- Links to a local CSS file 'style.css' for custom styling -->
   </head>
   <body>
+    <!-- Contains all visible content of the webpage -->
+
     <div id="header">
+      <!-- Container for the header section, 'id' allows unique styling or scripting -->
+
       <img src="./images/cloud.png" class="cloud c1" alt="cloud 1" />
+      <!-- Embeds an image; 'src' is the relative path, 'class' for styling, 'alt' for accessibility -->
+
       <h1>I'm Rishabh</h1>
+      <!-- Level 1 heading, typically the main title -->
+
       <h2>A Future Developer</h2>
+      <!-- Level 2 heading, used as a subtitle -->
+
       <img src="./images/cloud.png" class="cloud c2" alt="cloud 2" />
+      <!-- Another cloud image with a different class for unique styling -->
+
       <img src="./images/mountain.png" class="mountain" alt="mountain" />
+      <!-- Mountain image, styled with 'mountain' class -->
     </div>
 
     <div id="skills" class="wrapper">
+      <!-- Skills section container, 'wrapper' class likely for layout (e.g., centering) -->
+
       <h2 class="l-2">What i know ?</h2>
+      <!-- Heading with 'l-2' class for styling, possibly line height or font -->
 
       <div class="row">
+        <!-- Container for horizontal layout of skill items, likely part of a grid -->
+
         <div class="skill">
+          <!-- Individual skill container, styled as a box or card -->
+
           <i class="fa-brands fa-html5"></i>
+          <!-- Font Awesome icon for HTML5, using 'fa-brands' for brand icons -->
+
           <h2>HTML</h2>
+          <!-- Skill name as a subheading -->
+
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed</p>
+          <!-- Paragraph with placeholder text for skill description -->
         </div>
         <div class="skill">
+          <!-- Second skill container -->
+
           <i class="fa-brands fa-css3"></i>
+          <!-- Font Awesome icon for CSS3 -->
+
           <h2>CSS</h2>
+          <!-- Skill name -->
+
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed</p>
+          <!-- Placeholder text -->
         </div>
         <div class="skill">
+          <!-- Third skill container -->
+
           <i class="fa-brands fa-js"></i>
+          <!-- Font Awesome icon for JavaScript -->
+
           <h2>Javascript</h2>
+          <!-- Skill name -->
+
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed</p>
+          <!-- Placeholder text -->
         </div>
       </div>
     </div>
 
     <div id="main" class="wrapper">
+      <!-- Main content section, with 'wrapper' class for layout -->
+
       <img
         src="https://static.vecteezy.com/system/resources/thumbnails/043/210/041/small_2x/portrait-of-a-confident-young-black-man-for-lifestyle-or-fashion-marketing-free-photo.jpeg"
         alt="men"
       />
+      <!-- Image from an external URL; 'alt' should be more descriptive for accessibility -->
+
       <h2 class="l-2">Who am i ?</h2>
+      <!-- Section heading with styling class -->
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit
         unde excepturi sapiente velit fugiat sequi possimus, perferendis magnam
         quam.
       </p>
+      <!-- Paragraph with placeholder text -->
 
       <a class="btn" href="mailto:rohn11shrma@gmail.com">CONNECT</a>
+      <!-- Email link; 'mailto' opens user's email client, 'btn' class for button styling -->
     </div>
 
     <div id="pricing" class="wrapper">
+      <!-- Pricing section container -->
+
       <h2 class="l-2">A Plan For Every Business</h2>
+      <!-- Section heading -->
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
         perferendis!
       </p>
+      <!-- Introductory paragraph -->
+
       <div class="row">
+        <!-- Container for horizontal layout of pricing cards -->
+
         <div class="col">
+          <!-- Column for grid layout -->
+
+          <div class="card">
+            <!-- Card container for pricing plan -->
+
+            <div class="card-header">
+              <!-- Card header section -->
+
+              <h4 class="card-title">Category</h4>
+              <!-- Card title, lower-level heading -->
+            </div>
+            <div class="card-body">
+              <!-- Card content section -->
+
+              <h3 class="card-price">FREE</h3>
+              <!-- Price heading, styled for emphasis -->
+
+              <p>Lorem, ipsum dolor.</p>
+              <!-- Feature description -->
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Second column -->
+
           <div class="card">
             <div class="card-header">
               <h4 class="card-title">Category</h4>
@@ -77,19 +168,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">Category</h4>
-            </div>
-            <div class="card-body">
-              <h3 class="card-price">FREE</h3>
-              <p>Lorem, ipsum dolor.</p>
-              <p>Lorem, ipsum dolor.</p>
-              <p>Lorem, ipsum dolor.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
+          <!-- Third column, with an extra feature in the card -->
+
           <div class="card">
             <div class="card-header">
               <h4 class="card-title">Category</h4>
@@ -107,21 +187,41 @@
     </div>
 
     <div id="contact" class="wrapper">
+      <!-- Contact section container -->
+
       <h2 class="l-2">GET IN TOUCH</h2>
+      <!-- Main heading -->
+
       <h3 class="l-3">ALWAYS AWAKE TO CODE</h3>
+      <!-- Subheading with 'l-3' styling -->
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
         necessitatibus?
       </p>
+      <!-- Placeholder text -->
+
       <a class="btn" href="tel:+918766367815">CONNECT</a>
+      <!-- Phone link; 'tel' opens user's dialer, 'btn' for button styling -->
     </div>
 
     <div id="footer" class="wrapper">
+      <!-- Footer section container -->
+
       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+      <!-- Social media link for Facebook, empty 'href' should be updated -->
+
       <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <!-- Instagram link, empty 'href' -->
+
       <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <!-- LinkedIn link, empty 'href' -->
+
       <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      <!-- X (Twitter) link, empty 'href' -->
+
       <p>&copy; Copyright 2025</p>
+      <!-- Copyright notice; '&copy;' is the HTML entity for © -->
     </div>
   </body>
 </html>

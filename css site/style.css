@@ -1,218 +1,252 @@
+/* Import external fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+/* Imports Montserrat (with italic and weights 100-900) and Sacramento fonts for use in the stylesheet */
 
-/* Reset all elements' margin and padding to 0 */
+/* Reset default margins and padding for all elements */
 * {
-  margin: 0; /* Removes default margin from all elements */
-  padding: 0; /* Removes default padding from all elements */
+  margin: 0; /* Removes default margin from all elements to ensure consistent spacing */
+  padding: 0; /* Removes default padding from all elements for a clean layout */
 }
 
-/* Style all heading elements (h1-h6) */
-
+/* Style all heading elements (h2 to h6) */
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 16px; /* Adds space below headings */
-  font-family: Montserrat, Arial, Helvetica, sans-serif; /* Sets font to Arial, falls back to Helvetica or sans-serif */
+  margin-bottom: 16px; /* Adds 16px space below headings for separation */
+  font-family: Montserrat, Arial, Helvetica, sans-serif; /* Uses Montserrat font, with Arial, Helvetica, or generic sans-serif as fallbacks */
 }
 
 /* Style paragraph elements */
 p {
-  font-family: sans-serif; /* Sets font to sans-serif */
-  margin-bottom: 16px; /* Adds space below paragraphs */
+  font-family: sans-serif; /* Applies a generic sans-serif font for paragraphs */
+  margin-bottom: 16px; /* Adds 16px space below paragraphs for readability */
 }
 
-/* Style for elements with class 'l-2' */
+/* Style for elements with class 'l-2' (used for specific headings) */
 .l-2 {
-  font-family: monospace; /* Uses monospace font */
-  color: tomato; /* Sets text color to tomato (red-orange) */
-  font-size: 48px; /* Large font size */
-  text-shadow: -2px 2px 0 #333; /* Shadow: left 2px, down 2px, no blur, dark gray */
+  font-family: monospace; /* Uses a monospace font for a typewriter-like look */
+  color: tomato; /* Sets text color to a red-orange shade */
+  font-size: 48px; /* Large font size for emphasis */
+  text-shadow: -2px 2px 0 #333; /* Adds a shadow: 2px left, 2px down, no blur, dark gray color */
 }
 
-/* Style for elements with class 'l-3' */
+/* Style for elements with class 'l-3' (used for specific subheadings) */
 .l-3 {
-  font-family: monospace; /* Uses monospace font */
-  color: tomato; /* Sets text color to tomato */
-  font-size: 24px; /* Medium font size */
-  text-shadow: -1px 1px 0 #333; /* Shadow: left 1px, down 1px, no blur, dark gray */
+  font-family: monospace; /* Monospace font for consistency with .l-2 */
+  color: tomato; /* Red-orange text color */
+  font-size: 24px; /* Smaller font size than .l-2 for hierarchy */
+  text-shadow: -1px 1px 0 #333; /* Subtle shadow: 1px left, 1px down, no blur, dark gray */
 }
 
 /* Style for elements with class 'btn' (button-like links) */
 .btn {
-  background-color: white; /* White background */
-  color: #333; /* Dark gray text */
-  text-decoration: none; /* Removes underline from links */
-  padding: 10px 12px; /* 10px top/bottom, 12px left/right padding */
-  border-radius: 4px; /* Slightly rounded corners */
-  display: inline-block; /* Allows width/height and margin/padding */
-  font-family: sans-serif; /* Uses sans-serif font */
-  font-size: 16px; /* Medium font size */
+  background-color: white; /* White background for buttons */
+  color: #333; /* Dark gray text color */
+  text-decoration: none; /* Removes default underline from links */
+  padding: 10px 12px; /* 10px top/bottom, 12px left/right padding for button size */
+  border-radius: 4px; /* Slightly rounded corners for a modern look */
+  display: inline-block; /* Allows block-level styling like padding and margins */
+  font-family: sans-serif; /* Generic sans-serif font for buttons */
+  font-size: 16px; /* Standard font size for readability */
 }
 
-/* Style for elements with class 'wrapper' */
+/* Style for elements with class 'wrapper' (used for section containers) */
 .wrapper {
-  text-align: center; /* Centers text horizontally */
-  padding: 120px; /* Large padding on all sides */
-  margin: 40px; /* Space outside the wrapper */
-  box-shadow: 0 0 5px 0 grey; /* Shadow: no offset, 5px blur, no spread, grey color */
-  background-color: powderblue; /* Light blue background */
-  border-radius: 20px; /* Large rounded corners */
+  text-align: center; /* Centers all text content within the wrapper */
+  padding: 120px; /* Large padding on all sides for spacious sections */
+  margin: 40px; /* 40px margin around the wrapper for separation */
+  box-shadow: 0 0 5px 0 grey; /* Subtle shadow: no offset, 5px blur, grey color */
+  background-color: powderblue; /* Light blue background for visual appeal */
+  border-radius: 20px; /* Large rounded corners for a soft look */
 }
 
 /* Style for images inside element with id 'main' */
 #main img {
-  /* x-axis , y-axis, blur radius , spread radius, color */
-  box-shadow: -4px 2px 2px 0 grey; /* Shadow: left 4px, down 2px, 2px blur, no spread, grey */
-  width: 200px; /* Fixed width */
-  height: 200px; /* Fixed height */
-  border-radius: 50%; /* Makes image circular */
-  margin-bottom: 16px; /* Space below image */
+  box-shadow: -4px 2px 2px 0 grey; /* Shadow: 4px left, 2px down, 2px blur, no spread, grey */
+  width: 200px; /* Fixed image width */
+  height: 200px; /* Fixed image height */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 16px; /* Adds space below the image */
 }
 
-/* Hover effect for elements with class 'btn' */
+/* Hover effect for buttons with class 'btn' */
 .btn:hover {
-  box-shadow: -4px 2px 2px 0 grey; /* Adds shadow on hover */
-  transform: scale(1.1); /* Slightly enlarges button */
-  transition: 0.3s ease-in-out; /* Smooth transition for effects */
-  letter-spacing: 2px; /* Increases space between letters */
+  box-shadow: -4px 2px 2px 0 grey; /* Adds shadow on hover for depth */
+  transform: scale(1.1); /* Scales button to 110% size for emphasis */
+  transition: 0.3s ease-in-out; /* Smooth 0.3-second transition for hover effects */
+  letter-spacing: 2px; /* Increases letter spacing for a dynamic effect */
 }
 
+/* Style for footer section */
 #footer {
-  /* 1rem =  64px */
-  padding: 2rem 4rem;
-  color: #333;
-  text-shadow: -1px 1px 0 grey;
+  padding: 2rem 4rem; /* 32px top/bottom, 64px left/right padding (1rem = 16px) */
+  color: #333; /* Dark gray text color */
+  text-shadow: -1px 1px 0 grey; /* Subtle shadow for text: 1px left, 1px down, grey */
 }
 
+/* Style for links in footer */
 #footer a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  font-size: 2rem;
-  color: #333;
+  margin: 0 0.5rem; /* 8px margin on left/right for spacing between social icons */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 2rem; /* 32px font size for large social icons */
+  color: #333; /* Dark gray color for icons */
 }
+
+/* Style for paragraph in footer */
 #footer p {
-  margin-top: 1rem;
+  margin-top: 1rem; /* 16px margin above copyright text for spacing */
 }
 
+/* Hover effect for social icons in footer */
 #footer a:hover i {
-  transition: 0.3s ease-in-out;
-  transform: scale(1.1) rotate(-5deg);
-  color: tomato;
+  transition: 0.3s ease-in-out; /* Smooth 0.3-second transition for hover effects */
+  transform: scale(1.1) rotate(-5deg); /* Scales icon 110% and rotates 5 degrees left */
+  color: tomato; /* Changes icon color to red-orange on hover */
 }
 
-/* header */
+/* Style for header section */
 #header {
-  padding-top: 4rem;
-  position: relative;
-  color: teal;
-  background-color: rgb(225, 246, 249);
-  text-align: center;
+  padding-top: 4rem; /* 64px top padding for spacing */
+  position: relative; /* Allows absolute positioning of child elements (like clouds) */
+  color: teal; /* Teal text color for header content */
+  background-color: rgb(225, 246, 249); /* Light cyan background */
+  text-align: center; /* Centers all content horizontally */
 }
 
+/* Style for h1 in header */
 #header h1 {
-  text-shadow: -2px 2px 0 tomato;
-  font-family: Sacramento, Montserrat, Arial;
-  font-style: italic;
-  /* 1rem = 16px */
-  font-size: 5rem;
+  text-shadow: -2px 2px 0 tomato; /* Shadow: 2px left, 2px down, red-orange */
+  font-family: Sacramento, Montserrat, Arial; /* Uses Sacramento font, with fallbacks */
+  font-style: italic; /* Italicizes the text */
+  font-size: 5rem; /* 80px font size for large, prominent title */
 }
+
+/* Style for h2 in header */
 #header h2 {
-  text-shadow: -1px 1px 0 tomato;
-  /* 1rem = 16px */
-  font-size: 2rem;
-  font-weight: 400;
+  text-shadow: -1px 1px 0 tomato; /* Subtle shadow: 1px left, 1px down, red-orange */
+  font-size: 2rem; /* 32px font size for subtitle */
+  font-weight: 400; /* Normal font weight for less emphasis */
 }
 
+/* Style for cloud images in header */
 #header .cloud {
-  filter: drop-shadow(-4px 0 4px grey);
-  width: 250px;
+  filter: drop-shadow(
+    -4px 0 4px grey
+  ); /* Adds a drop shadow: 4px left, 4px blur, grey */
+  width: 250px; /* Fixed width for cloud images */
 }
+
+/* Style for mountain image in header */
 #header .mountain {
-  filter: drop-shadow(-4px 0 4px grey);
-  width: 800px;
+  filter: drop-shadow(-4px 0 4px grey); /* Same shadow as clouds */
+  width: 800px; /* Larger width for mountain image */
 }
 
+/* Style for first cloud (c1) in header */
 #header .c1 {
-  position: relative;
-  left: 400px;
+  position: relative; /* Relative positioning for layout adjustments */
+  left: 400px; /* Moves cloud 400px to the right */
 }
+
+/* Style for second cloud (c2) in header */
 #header .c2 {
-  position: absolute;
-  left: 200px;
-  bottom: 300px;
+  position: absolute; /* Absolute positioning relative to parent (#header) */
+  left: 200px; /* Positions 200px from the left */
+  bottom: 300px; /* Positions 300px from the bottom */
 }
 
+/* Style for row in skills section */
 #skills .row {
-  display: flex;
-  margin-top: 2rem;
-  justify-content: space-between;
+  display: flex; /* Uses flexbox for horizontal layout */
+  margin-top: 2rem; /* 32px top margin for spacing */
+  justify-content: space-between; /* Distributes skill items evenly across the row */
 }
+
+/* Style for individual skill containers */
 #skills .skill {
-  padding: 2rem;
-  width: 25%;
-  border-radius: 10px;
+  padding: 2rem; /* 32px padding on all sides */
+  width: 25%; /* Each skill takes 25% of the row width */
+  border-radius: 10px; /* Rounded corners for a card-like look */
 }
+
+/* Style for paragraphs inside skill containers */
 #skills .skill p {
-  margin: 0;
+  margin: 0; /* Removes default margin for tighter layout */
 }
 
+/* Hover effect for skill containers */
 #skills .skill:hover {
-  background-color: #fff;
-  transition: 0.3s ease-in;
-  box-shadow: -2px 2px 0 tomato;
+  background-color: #fff; /* White background on hover */
+  transition: 0.3s ease-in; /* Smooth 0.3-second transition for hover effects */
+  box-shadow: -2px 2px 0 tomato; /* Adds shadow: 2px left, 2px down, red-orange */
 }
 
+/* Style for icons inside skill containers */
 #skills .skill i {
-  color: teal;
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  color: teal; /* Teal color for icons */
+  font-size: 4rem; /* 64px font size for large icons */
+  margin-bottom: 1rem; /* 16px space below icons */
 }
 
+/* Hover effect for icons in skill containers */
 #skills .skill:hover i {
-  transition: 0.3s ease-in;
-  transform: rotate(360deg);
-  text-shadow: -2px 2px 0 tomato;
+  transition: 0.3s ease-in; /* Smooth 0.3-second transition */
+  transform: rotate(360deg); /* Rotates icon 360 degrees on hover */
+  text-shadow: -2px 2px 0 tomato; /* Adds shadow: 2px left, 2px down, red-orange */
 }
 
+/* Style for row in pricing section */
 #pricing .row {
-  text-align: center;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center; /* Centers content in the row */
+  margin-top: 2rem; /* 32px top margin */
+  display: flex; /* Uses flexbox for horizontal layout */
+  justify-content: space-between; /* Evenly spaces pricing cards */
+  align-items: center; /* Vertically aligns cards */
 }
+
+/* Style for columns in pricing row */
 #pricing .row .col {
-  width: 25%;
+  width: 25%; /* Each column takes 25% of the row width */
 }
+
+/* Style for pricing cards */
 #pricing .row .col .card {
-  box-shadow: -2px 2px 0 tomato;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 0.5px solid #ccc;
+  box-shadow: -2px 2px 0 tomato; /* Shadow: 2px left, 2px down, red-orange */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures content stays within rounded borders */
+  border: 0.5px solid #ccc; /* Light gray border */
 }
 
+/* Style for card header in pricing section */
 #pricing .row .col .card-header {
-  padding: 1rem;
-  background-color: teal;
-  color: #fff;
-}
-#pricing .row .col .card-body {
-  padding: 1rem;
-  background-color: #fff;
-}
-#pricing .row .col .card-body .card-price {
-  font-weight: 700;
-  color: teal;
-  text-shadow: -2px 2px 0 tomato;
-  font-size: 3rem;
-}
-#pricing .row .col .card-header .card-title {
-  font-size: 1.6rem;
-  font-weight: 500;
+  padding: 1rem; /* 16px padding */
+  background-color: teal; /* Teal background */
+  color: #fff; /* White text color */
 }
 
+/* Style for card body in pricing section */
+#pricing .row .col .card-body {
+  padding: 1rem; /* 16px padding */
+  background-color: #fff; /* White background */
+}
+
+/* Style for price in card body */
+#pricing .row .col .card-body .card-price {
+  font-weight: 700; /* Bold font for emphasis */
+  color: teal; /* Teal text color */
+  text-shadow: -2px 2px 0 tomato; /* Shadow: 2px left, 2px down, red-orange */
+  font-size: 3rem; /* 48px font size for prominence */
+}
+
+/* Style for card title in card header */
+#pricing .row .col .card-header .card-title {
+  font-size: 1.6rem; /* 25.6px font size */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Style for h4 in card header */
 #pricing .row .col .card-header h4 {
-  margin: 0;
+  margin: 0; /* Removes default margin for tight layout */
 }
